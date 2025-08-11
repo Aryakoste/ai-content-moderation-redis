@@ -157,15 +157,7 @@ class StreamlinAIServer {
         this.app.use(compression());
 
         // CORS configuration
-        this.app.use(cors({
-            origin: [
-                "http://localhost:3000",
-                "https://streamlinai.vercel.app",
-                process.env.CLIENT_URL
-            ].filter(Boolean),
-            credentials: true,
-            methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
-        }));
+        this.app.use(cors());
 
         this.app.use(express.json({ limit: '10mb' }));
         this.app.use(express.urlencoded({ extended: true }));
