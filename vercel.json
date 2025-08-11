@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://test-backend-url.onrender.com/api/$1" 
+      "dest": "https://ai-content-moderation-redis-2.onrender.com/api/$1" 
     },
     {
       "src": "/(.*)",
@@ -21,8 +21,8 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://test-url.onrender.com",   
-    "VITE_SOCKET_URL": "https://test-url.onrender.com"
+    "VITE_API_URL": "https://ai-content-moderation-redis-2.onrender.com",   
+    "VITE_SOCKET_URL": "https://ai-content-moderation-redis-2.onrender.com"
   },
   "buildCommand": "npm run build"
 }
