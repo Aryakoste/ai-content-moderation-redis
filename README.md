@@ -19,7 +19,7 @@ Unlike typical Redis implementations that focus solely on caching, StreamlinAI l
 
 ## 🚀 Live Demo
 
-**Frontend Application**: [View Live Demo](https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/6a46f2be3d4a0871417472da316823d5/0de1dfcc-7821-441d-b699-292e6df7d88b/index.html)
+**Frontend Application**: [View Live Demo](https://ai-content-moderation-redis-fronten-five.vercel.app/)
 
 *Note: The demo frontend shows the complete UI. For full functionality including Redis backend, follow the setup instructions below.*
 
@@ -414,5 +414,3 @@ This project is submitted for the **Redis AI Challenge: Beyond the Cache**. It d
 **Built with ❤️ using Redis 8's full potential**
 
 ---
-
-*For questions or support, please open an issue or contact [your-email@example.com]*
