@@ -1,0 +1,24 @@
+{
+  "name": "streamlinai",
+  "version": "1.0.0",
+  "description": "Redis 8 Powered AI Content Moderation Platform",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": ["redis", "ai", "content-moderation", "real-time", "dashboard"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: streamlinai-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_URL
+        value: https://streamlinai.vercel.app
+      # Add Redis URL from Render Redis addon
+      # - key: REDIS_URL
+      #   fromService:
+      #     type: redis
+      #     name: streamlinai-redis
+      #     property: connectionString
+
+# Optional Redis service (for full functionality)
+# databases:
+#   - name: streamlinai-redis
+#     databaseName: streamlinai
+#     user: streamlinai

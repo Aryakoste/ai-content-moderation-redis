@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "name": "streamlinai-frontend",
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "frontend/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://your-backend-url.onrender.com/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/dist/$1"
+    }
+  ],
+  "env": {
+    "VITE_API_URL": "https://your-backend-url.onrender.com",
+    "VITE_SOCKET_URL": "https://your-backend-url.onrender.com"
+  },
+  "buildCommand": "cd frontend && npm run build"
+}
