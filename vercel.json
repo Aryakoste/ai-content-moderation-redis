@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://your-backend-url.onrender.com/api/$1" //Will Replace this
+      "dest": "https://test-backend-url.onrender.com/api/$1" 
     },
     {
       "src": "/(.*)",
@@ -21,7 +21,7 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://test-url.onrender.com",    //Will Replace this
+    "VITE_API_URL": "https://test-url.onrender.com",   
     "VITE_SOCKET_URL": "https://test-url.onrender.com"
   },
   "buildCommand": "npm run build"
